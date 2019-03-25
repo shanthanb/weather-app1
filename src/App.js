@@ -337,22 +337,6 @@ class SuggestGithub extends Component {
   handleCancel(){
     this.setState({visibility:'none'});
   }
-
-  render (){
-    return (
-      <div className='suggestDiv' style={{display:this.state.visibility,left:this.state.leftTransform}}>
-        <div className='suggestContent' style={{width:ui.appW}}>
-          <div className='suggestTextCnt'>
-            <span>View source code or contribute to this project on <a href='https://github.com/Adnan-Toky/weather-app' target="_blank" rel="noopener noreferrer">GitHub</a></span>
-          </div>
-          <div className='suggestBtnCnt'>
-            <button className='btnCancel' onClick={this.handleCancel}>No, Thanks</button>
-            <a href='https://github.com/Adnan-Toky/weather-app' target="_blank" rel="noopener noreferrer"><button className='btnProceed' onClick={this.handleCancel}>Visit Now</button></a>
-          </div>
-        </div>
-      </div>
-    );
-  }
 }
 
 class App extends Component {
